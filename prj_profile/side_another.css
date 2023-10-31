@@ -1,0 +1,144 @@
+@font-face {
+	font-family: sometypeBold;
+	src: url(fonts/Sometype_Mono/static/SometypeMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: sometypeRegular;
+	src: url(fonts/Sometype_Mono/static/SometypeMono-Regular.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: sometypeBold;
+	list-style: none;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.section {
+	justify-content: center;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.navlist {
+	display: block;
+	background-color: #616866;
+	width: clamp(12%, 15%, 12%);
+	height: 100%;
+	height: 100svh;
+	padding: 30px;
+	max-width: 12vw;
+	z-index: 999;
+}
+
+.nav {
+	top: 0;
+	left: 0;
+	margin-top: 20px;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+
+	position: sticky;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+
+#darkmode {
+	margin-top: 30px;
+}
+
+.nav li {
+	margin: 20px 0;
+}
+
+.nav a {
+	margin: 80px 0;
+	border-bottom: 2px solid transparent;
+	color: whitesmoke;
+}
+
+.nav a:hover {
+	border-bottom: 2px solid white;
+}
+
+.nav img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 3px solid white;
+	position: relative;
+}
+
+.description-container{
+	padding: 20px;
+	font-size: 20px;
+	margin: clamp(10px, 80px, 80px);
+	width: fit-content;
+	height: auto;
+	border: 3px solid black;
+	border-radius: 10px;
+
+	display: flex;
+	text-align: center;
+	z-index: -1;
+}
+
+.description-container img {
+	margin-left: 20px;
+	width: 300px;
+	height: 400px;
+	position: relative;
+}
+
+.intro {
+	width: auto;
+	height: auto;
+	font-size: 35px;
+	margin: 20px;
+
+	text-align: center;
+	text-justify: inter-word;
+}
+
+.intro h1 {
+	font-size: 40px;
+}
+
+.bubble-normal {
+	left: 40%;
+	top: 10px;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: linear-gradient(to right, blue, darkviolet);
+	z-index: 2;
+}
+
+.bubble-bigger {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 80%;
+	top: 68%;
+	border-radius: 50%;
+	background-image: linear-gradient(to right, blue, darkviolet);
+	z-index: 1;
+}
+
+@media (width >= 992px) {
+	.description-container {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,109 @@
+@font-face {
+	font-family: bold;
+	src: url(SomeTypeMono/static/SometypeMono-Bold.ttf);
+}
+
+* {
+	font-family: bold;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	height: 100%;
+}
+
+.main {
+	display: inline-flex;
+	height: 100svh;
+}
+
+.navbar {
+	background-color: gray;
+	width: auto;
+	padding: 20px;
+	height: 100%;
+	z-index: 999;
+}
+
+.navlist img {
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 120px;
+}
+
+.navlist li {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.navlist a {
+	font-size: 20px;
+	color: white;
+}
+
+/*	MAIN */
+
+.main-page {
+	border: 2px solid black;
+	margin: 40px;
+	padding: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro {
+	font-size: 30px;
+}
+
+.projects-container {
+	position: fixed;
+	top: 30%;
+	right: 20px;
+}
+
+.button a {
+	color: white;
+}
+
+.prj-placards {
+	display: flex;
+	margin-top: 30px;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.prj-placards:hover {
+	box-shadow: 2px 2px 8px black;
+	z-index: 9;
+}
+
+.prj-placards img {
+	height: 200px;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+
+.prj-intro {
+	font-size: 20px;
+	margin-left: 20px;
+	width: 80%;
+	text-align: left;
+}
+
+@media screen and (width <= 702px) {
+	.navbar {
+		left: -100;
+		visibility: collapse;
+	}
+
+	.nav-button {
+		visibility: visible;
+	}
+}

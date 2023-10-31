@@ -1,0 +1,94 @@
+@font-face {
+	font-family: bold;
+	src: url(SomeTypeMono/static/SometypeMono-Bold.ttf);
+}
+
+* {
+	font-family: bold;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.main {
+	display: inline-flex;
+	height: 100%;
+}
+
+.navbar {
+	background-color: red;
+	width: auto;
+	padding: 20px;
+	height: 100svh;
+}
+
+.navlist img {
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 120px;
+}
+
+.navlist li {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.navlist a {
+	font-size: 20px;
+	color: white;
+}
+
+.nav-button {
+	background-color: red;
+	position: fixed;
+	padding: 20px;
+	z-index: 0;
+	left: 20px;
+	top: 20px;
+	visibility: hidden;
+	cursor: pointer;
+	color: white;
+}
+
+.nav-button:hover .nav-menu{
+	visibility: visible;
+}
+
+.nav-menu {
+	position: fixed;
+	text-align: center;
+	background-color: red;
+	padding: 20px;	
+	height: fit-content;
+	top: 6%;
+	left: 15px;
+	visibility: hidden;
+}
+
+.nav-menu a {
+	color: white;
+}
+
+/*	MAIN */
+
+.calc-container {
+	justify-content: center;
+	align-items: center;
+}
+
+.calc-box {
+	margin: 50%;
+	border: 2px solid black;
+}
+
+@media screen and (width <= 702px) {
+	.navbar {
+		left: -100;
+		visibility: collapse;
+	}
+
+	.nav-button {
+		visibility: visible;
+	}
+}
